@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/static/css/styles.css">
+        <title>Shopogolic</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <ul class="nav nav-pills justify-content-end align-items-end">
+                <li class="nav-item"><a href="/clothes/" class="nav-link">Одежда</a></li>
+                <li class="nav-item"><a href="/shoes/" class="nav-link">Обувь</a></li>
+                <li class="nav-item"><a href="/jackets/" class="nav-link">Куртки</a></li>
+            </ul>
+            {% block content %}
+                Начальная страница
+            {% endblock %}
+            <div class="row fixed-bottom modal-footer">
+                <hr>
+                <p>All rights Reserved</p>
+            </div>
+        </div>
+    </body>
+</html>
