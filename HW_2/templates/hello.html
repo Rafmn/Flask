@@ -1,0 +1,12 @@
+{% extends 'login.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    Hello {{ name }}
+    <form action="/logout/" method="post">
+        <button type="submit" name="logout">Выйти</button>
+    </form>
+{% endblock %}
