@@ -50,6 +50,7 @@ def register():
             return render_template('register.html', form=form)
 
         user = User(firstname=firstname, lastname=lastname, email=email, password=password)
+        user.set_password(password)
         db.session.add(user)
         db.session.commit()
         return 'Registered success!'
