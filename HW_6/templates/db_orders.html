@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    База заказов
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+    {% for order in orders %}
+        <p>
+            ID: {{ order.id }}<br>
+            Модель: {{ order.model }}
+            Статус: {{ order.status_order }}
+            Имя: {{ order.first_name }}
+        </p>
+    {% endfor %}
+    </div>
+{% endblock %}
